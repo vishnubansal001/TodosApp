@@ -5,10 +5,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  <main className="flex">
-    <div>
-      <TodosList />
-    </div>
-    <div className="flex-1">{children}</div>
-  </main>;
+  return (
+    <main className="flex">
+      <div>
+        <TodosList />
+      </div>
+      <div className="flex-1">{children}</div>
+    </main>
+  );
 }
